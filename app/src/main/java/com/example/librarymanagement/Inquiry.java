@@ -21,6 +21,14 @@ public class Inquiry extends AppCompatActivity {
         Button home = findViewById(R.id.home);
         Button donation = findViewById(R.id.Donation);
 
+        donation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(Inquiry.this, Donation.class);
+                startActivity(intent);
+            }
+        });
+
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
