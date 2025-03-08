@@ -26,8 +26,29 @@ public class MainActivity extends AppCompatActivity {
         //Define a buttons
         Button borrow = findViewById(R.id.BorrowBook);
 
-        //Another buttons defined
+        //Return button defined
         Button returnbook = findViewById(R.id.ReturnBook);
+        //inquiry button
+        Button inquiry = findViewById(R.id.Inquiry);
+        Button donation = findViewById(R.id.Donation);
+
+        donation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Donation.class);
+                startActivity(intent);
+            }
+        });
+
+
+        inquiry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(MainActivity.this,Inquiry.class);
+                startActivity(intent);
+            }
+        });
+
 
 
         //Borrow activity
