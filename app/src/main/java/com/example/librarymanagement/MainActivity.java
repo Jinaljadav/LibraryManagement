@@ -30,14 +30,23 @@ public class MainActivity extends AppCompatActivity {
         Button returnbook = findViewById(R.id.ReturnBook);
 
 
-        //Function to the button
-
+        //Borrow activity
         borrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Naviagte to borrow a book page
 
                 Intent intent= new Intent(MainActivity.this,BorrowActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //Returnbook activity
+
+        returnbook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ReturnBook.class);
                 startActivity(intent);
             }
         });
