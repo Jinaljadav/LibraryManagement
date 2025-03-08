@@ -19,6 +19,7 @@ public class Inquiry extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_inquiry);
         Button home = findViewById(R.id.home);
+        Button donation = findViewById(R.id.Donation);
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
