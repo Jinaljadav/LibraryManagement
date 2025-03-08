@@ -26,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
         //Define a buttons
         Button borrow = findViewById(R.id.BorrowBook);
 
+        //Another buttons defined
+        Button returnbook = findViewById(R.id.ReturnBook);
+
+
         //Function to the button
 
         borrow.setOnClickListener(new View.OnClickListener() {
