@@ -1,10 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Donation">
+    android:orientation="vertical"
+    android:padding="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"/>
+
+    <Button
+        android:id="@+id/BorrowBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrow A Book" />
+
+    <Button
+        android:id="@+id/ReturnBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return A book"/>
+    <Button
+        android:id="@+id/Donation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donation"/>
+
+    <TextView
+        android:id="@+id/InquiryHeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ask your questions!"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add your comment/ Ask your Questions!"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"/>
+</LinearLayout>
